@@ -1,0 +1,41 @@
+.co {
+  position: absolute;
+  top: 0;
+  height: 52px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  box-shadow: 1px 1px 6px rgba(0,0,0,.1);
+  z-index: 10;
+}
+
+.ba {
+  margin-left: 10px;
+}
+
+.se {
+  outline: none;
+  border: 0;
+  color: #FF5E6D;
+  font-weight: bold;
+}
+
+.nl {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: stretch;
+  margin-left: 12px;
+}
+/* logo */
+
+.dml {
+  display: block;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}

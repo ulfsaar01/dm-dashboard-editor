@@ -1,0 +1,61 @@
+{
+  "name" : "Bubbles",
+  "options": [
+    {
+      "name": "Add",
+      "image": "/assets/add.png"
+    },
+    {
+      "name": "Bear",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_bear.png"
+    },
+    {
+      "name": "Bed",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_bed.png"
+    },
+    {
+      "name": "Cabinet",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_cabinet.png"
+    },
+    {
+      "name": "Catus",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_catus.png"
+    },
+    {
+      "name": "Computer",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_computer.png"
+    },
+    {
+      "name": "Door",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_door.png"
+    },
+    {
+      "name": "Effect",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_effect.png"
+    },
+    {
+      "name": "Fashion",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_fashion.png"
+    },
+    {
+      "name": "Lamp",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_lamp.png"
+    },
+    {
+      "name": "Pet",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_pet.png"
+    },
+    {
+      "name": "Plant",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_plant.png"
+    },
+    {
+      "name": "Table",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_table.png"
+    },
+    {
+      "name": "Wine",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_wine.png"
+    }
+  ]
+}
