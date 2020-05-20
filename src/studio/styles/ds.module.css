@@ -362,3 +362,26 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.mdcp {
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+}
+
+.mdcpb {
+  color:white;
+  background-color: #6c757d;
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mdcpb:active {
+  color:#6c757d;
+  background-color: #eee;
+
+}

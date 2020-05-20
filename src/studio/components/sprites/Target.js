@@ -13,7 +13,7 @@ const Target = props => {
   const imgRef = useRef()
   const rectRef = useRef()
   const [img] = useImage(image)
-
+  
   useEffect(() => {
     const attrs = nodeRef.current.getClientRect()
     attrs.x = -attrs.width / 2
@@ -124,7 +124,11 @@ const Target = props => {
       window.addEventListener('mousedown', handleOutsideClick)
     })
   }
+/*
+width={67}
+        height={96}
 
+        */
   return (
     <Group
       id={id}
@@ -136,8 +140,8 @@ const Target = props => {
     >
       <Image
         image={img}
-        scaleY="0.33"
-        scaleX="0.33"
+        scaleX="0.38"
+        scaleY="0.38"
         offsetX={img ? img.width / 2 : 0}
         offsetY={img ? img.height / 2 : 0}
         onDblClick={handleImgDblClick}

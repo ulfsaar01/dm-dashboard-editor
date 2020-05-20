@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React, { useState, useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import styles from '../styles/ds.module.css'
 //import Toolbar from './Toolbar'
 import Canvas from './Canvas'
@@ -11,9 +11,21 @@ import SplitPane from 'react-split-pane'
 import Navbar from './Navbar'
 import ProjectTools from './ProjectTools'
 import CanvasTools from './CanvasTools'
+import { fetchChallenge } from '../store/actions/fetchActions'
+import { loadFile } from '../store/actions/studioActions'
 
 const Workspace = props => {
+  const dispatch = useDispatch()
   const { loading } = props
+  const { env, id } = props.match.params
+
+  useEffect(() => {
+    if(env && id) {
+      dispatch(fetchChallenge(env, id)).then(data => {
+        dispatch(loadFile(data))
+      })
+    }
+  }, [dispatch, env, id])
 
   if (loading)
     return (
