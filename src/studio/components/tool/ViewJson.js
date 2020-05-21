@@ -9,6 +9,7 @@ const ViewJson = props => {
   const { width, height, sprites } = useSelector(state => state.artboard)
   const [isModal, setIsModal] = useState(false)
   const [jsonData, setJsonData] = useState("[]")
+
   useEffect(() => {
     if(isModal) {
       //console.log(sprites)
@@ -16,12 +17,17 @@ const ViewJson = props => {
     }
     
   }, [isModal, sprites])
+
   const handleClose = () => {
     setIsModal(false)
   }
 
   const handleOpen = () => {
     setIsModal(true)
+  }
+
+  const handleSave = () => {
+    window.parent.postMessage(spriteToJsonBubble(sprites, width, height),'*')
   }
 
   return (
@@ -38,6 +44,9 @@ const ViewJson = props => {
           </div>
         </Modal>
       ) : null}
+      <div className={styles.tlsplp} onClick={handleSave}>
+        Save & Close
+      </div>
       <div className={styles.tlspl} onClick={handleOpen}>
         View JSON
       </div>
