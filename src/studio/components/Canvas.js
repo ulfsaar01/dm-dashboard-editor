@@ -4,12 +4,13 @@ import Artboard from './Artboard'
 import Size from './size/Size'
 import CanvasTools from './CanvasTools'
 import ProjectTools from './ProjectTools'
+import ButtonInfo from './Info/ButtonInfo'
 
 const Canvas = () => {
   return (
     <div className={styles.ca}>
       <Artboard />
-      <Size />
+      {/*<Size />*/}
       <CanvasTools />
       <ProjectTools />
     </div>

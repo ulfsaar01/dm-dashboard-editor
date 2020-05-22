@@ -1,13 +1,14 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import styles from '../styles/ds.module.css'
 import BubbleOptions from './sidebar/BubbleOptions'
-import BubbleDetails from './sidebar/BubbleDetails'
+import ButtonDetail from './sidebar/ButtonDetail'
 import InventoryTabs from './inventory/inventoryTabs'
 
 const Sidebar = props => {
   const { select } = useSelector(state => state.artboard)
-/*
+  const { width, height, image, sprites } = useSelector(state => state.artboard)
+  /*
   const options = [
     {
       value: 'ss',
@@ -26,11 +27,13 @@ const Sidebar = props => {
 */
   return (
     <div className={styles.sb}>
-      <BubbleOptions/>
-      { select ? (
-      <div className={styles.sbov}>
-        <BubbleDetails />
-      </div>
+      <BubbleOptions />
+      {select ? (
+        <div className={styles.sbov}>
+          {sprites.map(t => (
+            <ButtonDetail key={t.id} data={t} {...t} />
+          ))}
+        </div>
       ) : null}
     </div>
   )

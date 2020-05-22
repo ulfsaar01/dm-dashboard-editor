@@ -107,12 +107,12 @@ export default function (state = initialState, action) {
         }
       }
 
-      const select = state.select ? sp : null
-      console.log(sp)
+     // const select = state.select ? sp : null
+
       return {
         ...state,
         sprites: state.sprites,
-        select: select
+        //select: select
       }
     }
     case DELETE_SPRITE: {
@@ -124,6 +124,8 @@ export default function (state = initialState, action) {
       }
     }
     case SELECT_SPRITE: {
+      state.sprites.map(e => (e.selected = false))
+
       const findex = state.sprites.findIndex(x => x.id === action.id)
 
       if (findex === -1) {
@@ -133,14 +135,23 @@ export default function (state = initialState, action) {
         }
       }
 
+      state.sprites[findex] = {
+        ...state.sprites[findex],
+        selected: true
+      }
+
       return {
         ...state,
+        sprites: state.sprites,
         select: state.sprites[findex]
       }
     }
     case DESELECT_SPRITE: {
+      state.sprites.map(e => (e.selected = false))
+
       return {
         ...state,
+        sprites: state.sprites,
         select: null
       }
     }

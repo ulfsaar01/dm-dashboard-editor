@@ -395,5 +395,20 @@
 .mdcpb:active {
   color:#6c757d;
   background-color: #eee;
+  pointer-events: none;
+}
 
+
+
+.infbl {
+  pointer-events: none;
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.selbg {
+  background-color: #eee;
 }
