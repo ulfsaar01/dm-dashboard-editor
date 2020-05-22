@@ -12,11 +12,13 @@ const Studio = () => {
   useEffect(() => {
     
     const handleIframeCallback = e => {
+      /*
       if(e.data.source === "react-devtools-content-script") return
       if(e.data.source === "react-devtools-detector") return
       if(e.data.source === "react-devtools-inject-backend") return
       if(e.data.source === "react-devtools-bridge") return
       if(e.data === "ready") return
+      */
       //console.log(e.data)
       dispatch(loadFile({buttons:JSON.parse(e.data)}))
     }
