@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import styles from '../styles/ds.module.css'
 import { Stage, Layer, Image } from 'react-konva'
@@ -6,12 +6,15 @@ import useImage from 'use-image'
 import Target from '../components/sprites/Target'
 import { ReactReduxContext, Provider } from 'react-redux'
 import { selectSprite, deselectSprite, dragEndProxy } from '../store/actions/artboardActions'
-
+/*
 const BackgroundImage = ({ image }) => {
   const [img] = useImage(image)
-  return <Image image={img} />
-}
 
+
+
+  return <Image image={img} ref />
+}
+*/
 const Artboard = () => {
   const dispatch = useDispatch()
   const { width, height, image, sprites } = useSelector(state => state.artboard)
@@ -19,6 +22,15 @@ const Artboard = () => {
   const stageRef = useRef()
   const dragRef = useRef()
   const staticRef = useRef()
+  const imgRef = useRef()
+  const [img] = useImage(image)
+
+  useEffect(() => {
+    const node = imgRef.current
+
+    node.width(stageRef.current.width())
+    node.height(stageRef.current.height())
+  }, [img])
 
   const handleDeselect = evt => {
     const clickedOnEmpty = evt.target === evt.target.getStage();
@@ -68,7 +80,7 @@ const Artboard = () => {
           >
             <Provider store={store}>
               <Layer listening={false}>
-                <BackgroundImage image={image} listening={false}/>
+                <Image image={img} listening={false} ref={imgRef}/>
               </Layer>
               <Layer ref={staticRef}>
                 {sprites.map(t => (

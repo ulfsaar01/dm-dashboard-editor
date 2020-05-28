@@ -36,8 +36,8 @@ const sprite = (title, image) => ({
 })
 
 const initialState = {
-  width: 750,
-  height: 750,
+  width: 414,
+  height: 414,
   minWidth: 100,
   maxWidth: 4096,
   minHeight: 100,

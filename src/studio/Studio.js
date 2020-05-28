@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 import { Route, Switch } from 'react-router-dom'
 import Workspace from './components/Workspace'
-import { initialize, loadFile } from './store/actions/studioActions'
+import { initialize, loadFile, loadFileFromParent } from './store/actions/studioActions'
 
 const Studio = () => {
   const dispatch = useDispatch()
@@ -19,8 +19,13 @@ const Studio = () => {
       if(e.data.source === "react-devtools-bridge") return
       if(e.data === "ready") return
       */
-      //console.log(e.data)
-      dispatch(loadFile({buttons:JSON.parse(e.data)}))
+      try {
+      const received = JSON.parse(e.data)
+      //console.log(received.buttons)
+      dispatch(loadFileFromParent(JSON.parse(received.buttons),received.image))
+      } catch (e) {
+
+      }
     }
 
     window.addEventListener('message', handleIframeCallback, false)

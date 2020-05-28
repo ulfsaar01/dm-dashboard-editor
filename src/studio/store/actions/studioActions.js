@@ -56,3 +56,64 @@ export const loadFile = data => {
     return
   }
 }
+
+export const loadFileFromParent = (buttons, image) => {
+  //console.log(data)
+
+  /*
+  const emptyImage = {
+  __type: 'File',
+  name: '',
+  url: ''
+}
+
+const bytesObj = file => {
+  return {
+    __type: 'Bytes',
+    base64: file
+  }
+
+  */
+
+  //const { width, height, image, sprites } = useSelector(state => state.artboard)
+  //const bg = (data.contestImageFile && data.contestImageFile.url) ? data.contestImageFile.url : ""
+  const bg = (image && image.url) ? image.url : (image.base64) ? image.base64 : ''
+  //const buttons = (buttons) ? buttons : []
+
+  //console.log(bg)
+  //console.log(buttons)
+  return (dispatch, getState) => {
+    const { width, height } = getState().artboard
+    var formatted = []
+
+    for (var item of buttons) {
+      //console.log(item)
+
+      const posX = Math.round((width*item.position.x)/0.9)
+      const posY = Math.round((height*item.position.y)/0.9)
+
+      const id =
+        item.title.toLowerCase() +
+        '_' +
+        posX +
+        '_' +
+        posY
+
+      const obj = {
+        id: id,
+        title:item.title,
+        image:(item.icon || '/assets/add.png') ,
+        cat:(item.categoryId || ''),
+        subcat:(item.subcategoryId || ''),
+        x: posX,
+        y: posY
+      }
+      formatted.push(obj)
+    }
+    //console.log(formatted)
+    dispatch(updateArtboardBackground(bg))
+    dispatch(generateSprites(formatted))
+
+    return
+  }
+}

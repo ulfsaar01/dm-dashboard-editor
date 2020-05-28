@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { useDispatch } from 'react-redux'
-import { Text, Image, Group, Rect } from 'react-konva'
+import { Text, Image, Group, Rect, Circle } from 'react-konva'
 import { updateSprite, deleteSprite } from '../../store/actions/artboardActions'
 import useImage from 'use-image'
 
@@ -12,8 +12,37 @@ const Target = props => {
   const txtRef = useRef()
   const imgRef = useRef()
   const rectRef = useRef()
+  const pointRef = useRef()
   const [img] = useImage(image)
-  
+
+  useEffect(() => {
+    const node = imgRef.current
+    const imgName = image.split('/').pop().split('.')[0]
+    //67x96_
+    //198x240
+
+    //if (node.width() > 0) {
+      if (imgName === 'add') {
+        const stupidOffset = 0 // 3.5
+        node.width(37)
+        node.height(37)
+        node.offsetX((37 / 2) - stupidOffset)
+        node.offsetY((37 / 2) - stupidOffset)
+        txtRef.current.offsetX(txtRef.current.offsetX() - stupidOffset)
+        txtRef.current.offsetY(-18 - stupidOffset)
+        //pointRef.current.offsetY(-3.5)
+        //pointRef.current.offsetX(-3.5)
+      } else {
+        const freakenOffset = 0
+        node.width(67)
+        node.height(81.2)
+        node.offsetX(67 / 2)
+        node.offsetY((81.2 / 2) - freakenOffset)
+        txtRef.current.offsetY(-42 - freakenOffset)
+      }
+    //}
+  }, [img])
+
   useEffect(() => {
     const attrs = nodeRef.current.getClientRect()
     attrs.x = -attrs.width / 2
@@ -124,7 +153,7 @@ const Target = props => {
       window.addEventListener('mousedown', handleOutsideClick)
     })
   }
-/*
+  /*
 width={67}
         height={96}
 
@@ -140,10 +169,6 @@ width={67}
     >
       <Image
         image={img}
-        scaleX="0.38"
-        scaleY="0.38"
-        offsetX={img ? img.width / 2 : 0}
-        offsetY={img ? img.height / 2 : 0}
         onDblClick={handleImgDblClick}
         onClick={onSelect}
         onTap={onSelect}
@@ -151,13 +176,12 @@ width={67}
       />
       <Text
         text={title}
-        fontSize="16"
+        fontSize="12"
         fontStyle="bold"
         fill="#888"
         align="center"
         width={100}
         offsetX="50"
-        offsetY={img ? -(img.height / 3) / 2 : 0}
         onDblClick={handleTxtDblClick}
         ref={txtRef}
       />
@@ -171,8 +195,20 @@ width={67}
         shadowOpacity={0.25}
         ref={rectRef}
       />
+      <Circle
+        fill='yellowgreen'
+        width='5'
+        height='5'
+        ref={pointRef}
+      />
     </Group>
   )
 }
 
 export default Target
+/*
+        scaleX="0.38"
+        scaleY="0.38"
+                offsetX={img ? img.width / 2 : 0}
+        offsetY={img ? img.height / 2 : 0}
+        */
