@@ -3,59 +3,73 @@
   "options": [
     {
       "name": "Add",
-      "image": "/assets/add.png"
+      "image": "/assets/add.png",
+      "titleEditable": true
     },
     {
-      "name": "Bear",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_bear.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_bear.png",
+      "titleEditable": false
     },
     {
-      "name": "Bed",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_bed.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_bed.png",
+      "titleEditable": false
     },
     {
-      "name": "Cabinet",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_cabinet.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_cabinet.png",
+      "titleEditable": false
     },
     {
-      "name": "Catus",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_catus.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_catus.png",
+      "titleEditable": false
     },
     {
-      "name": "Computer",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_computer.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_computer.png",
+      "titleEditable": false
     },
     {
-      "name": "Door",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_door.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_door.png",
+      "titleEditable": false
     },
     {
-      "name": "Effect",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_effect.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_effect.png",
+      "titleEditable": false
     },
     {
-      "name": "Fashion",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_fashion.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_fashion.png",
+      "titleEditable": false
     },
     {
-      "name": "Lamp",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_lamp.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_lamp.png",
+      "titleEditable": false
     },
     {
-      "name": "Pet",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_pet.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_pet.png",
+      "titleEditable": false
     },
     {
-      "name": "Plant",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_plant.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_plant.png",
+      "titleEditable": false
     },
     {
-      "name": "Table",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_table.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_table.png",
+      "titleEditable": false
     },
     {
-      "name": "Wine",
-      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_wine.png"
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_wine.png",
+      "titleEditable": false
     }
   ]
 }

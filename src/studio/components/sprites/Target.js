@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Text, Image, Group, Rect, Circle } from 'react-konva'
 import { updateSprite, deleteSprite } from '../../store/actions/artboardActions'
 import useImage from 'use-image'
 
 const Target = props => {
-  const { id, image, title, x, y, isSelected, onSelect } = props
+  const { id, image, title, x, y, isSelected, onSelect, titleEditable } = props
   //const { x, y } = attrs
   const dispatch = useDispatch()
   const nodeRef = useRef()
@@ -14,6 +14,7 @@ const Target = props => {
   const rectRef = useRef()
   const pointRef = useRef()
   const [img] = useImage(image)
+  const [editText] = useState(titleEditable)
 
   useEffect(() => {
     const node = imgRef.current
@@ -79,6 +80,7 @@ const Target = props => {
   }
 
   const handleTxtDblClick = () => {
+    if(editText === false) return
     const layer = nodeRef.current.parent
     const txtNode = txtRef.current
     const textPosition = txtNode.getAbsolutePosition()

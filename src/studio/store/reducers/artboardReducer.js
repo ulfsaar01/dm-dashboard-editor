@@ -29,10 +29,11 @@ const generateTargets = () => {
 }
 */
 
-const sprite = (title, image) => ({
+const sprite = (title, image, titleEditable) => ({
   id: 0,
   title: title,
-  image: image
+  image: image,
+  titleEditable
 })
 
 const initialState = {
@@ -156,7 +157,7 @@ export default function (state = initialState, action) {
       }
     }
     case DRAG_START_PROXY: {
-      const sp = sprite(action.title, action.image)
+      const sp = sprite(action.title, action.image, action.titleEditable)
       return {
         ...state,
         proxy: {
