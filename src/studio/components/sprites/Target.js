@@ -202,6 +202,7 @@ width={67}
         width='5'
         height='5'
         ref={pointRef}
+        listening={false}
       />
     </Group>
   )
