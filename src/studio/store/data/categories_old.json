@@ -541,16 +541,6 @@
 				"children": []
 			},
 			{
-				"name": "Bathroom",
-				"value": "bathroom-1",
-				"children": []
-			},
-			{
-				"name": "Construction",
-				"value": "construction-1",
-				"children": []
-			},
-			{
 				"name": "Dinnerware",
 				"value": "11054",
 				"children": []
@@ -558,11 +548,6 @@
 			{
 				"name": "Drinkware",
 				"value": "11055",
-				"children": []
-			},
-			{
-				"name": "Fashion",
-				"value": "fashion-1",
 				"children": []
 			},
 			{
@@ -717,20 +702,5 @@
 				"children": []
 			}
 		]
-	},
-	{
-		"name": "Pet",
-		"value": "11998",
-		"children": []
-	},
-	{
-		"name": "Holiday",
-		"value": "holiday-1",
-		"children": []
-	},
-	{
-		"name": "Effect",
-		"value": "11999",
-		"children": []
 	}
 ]

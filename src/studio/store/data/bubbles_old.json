@@ -1,0 +1,75 @@
+{
+  "name" : "Bubbles",
+  "options": [
+    {
+      "name": "Add",
+      "image": "/assets/add.png",
+      "titleEditable": true
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_bear.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_bed.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_cabinet.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_bath.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_computer.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_door.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_effect.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_fashion.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_lamp.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_pet.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_plant.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_table.png",
+      "titleEditable": false
+    },
+    {
+      "name": "MyDecor",
+      "image": "https://decormatters-prod.s3-us-west-1.amazonaws.com/bubble/MyDecor_bubble_wine.png",
+      "titleEditable": false
+    }
+  ]
+}
