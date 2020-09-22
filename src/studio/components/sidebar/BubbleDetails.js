@@ -19,6 +19,7 @@ const BubbleDetails = () => {
   }, [select])
 */
   const handleCatSelect = e => {
+    console.log(e.target.value)
     setSelectCategory(e.target.value)
     
     dispatch(

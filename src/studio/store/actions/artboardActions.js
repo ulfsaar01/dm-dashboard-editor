@@ -59,11 +59,12 @@ export const deselectSprite = () => ({
 })
 
 
-export const dragStartProxy = (title, image, titleEditable) => ({
+export const dragStartProxy = (title, image, titleEditable, cat) => ({
   type: DRAG_START_PROXY,
   title,
   image,
-  titleEditable
+  titleEditable,
+  cat
 })
 
 export const dragEndProxy = attrs => ({

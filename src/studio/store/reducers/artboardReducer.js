@@ -29,11 +29,12 @@ const generateTargets = () => {
 }
 */
 
-const sprite = (title, image, titleEditable) => ({
+const sprite = (title, image, titleEditable, cat) => ({
   id: 0,
   title: title,
   image: image,
-  titleEditable
+  titleEditable,
+  cat
 })
 
 const initialState = {
@@ -85,7 +86,7 @@ export default function (state = initialState, action) {
     }
     case UPDATE_SPRITE: {
       const findex = state.sprites.findIndex(x => x.id === action.id)
-
+      
       if (findex === -1) {
         return {
           ...state
@@ -98,6 +99,8 @@ export default function (state = initialState, action) {
       }
 
       const sp = state.sprites[findex]
+      
+      console.log(sp)
       //if out of bound then delete
       if (sp.x < 0 || sp.y < 0 || sp.x > state.width || sp.y > state.height) {
         const remainder = state.sprites.filter(item => item.id !== action.id)
@@ -157,7 +160,7 @@ export default function (state = initialState, action) {
       }
     }
     case DRAG_START_PROXY: {
-      const sp = sprite(action.title, action.image, action.titleEditable)
+      const sp = sprite(action.title, action.image, action.titleEditable, action.cat)
       return {
         ...state,
         proxy: {
