@@ -8,7 +8,7 @@ const BubbleCard = ({ data }) => {
 
   return (
     <div className={styles.inca}>
-      <img src={data.image} alt={data.name} draggable="true" onDragStart={e => { dispatch(dragStartProxy(data.name,data.image,data.titleEditable,data.cat)) }}/> 
+      <img src={data.image} alt={data.name} draggable="true" onDragStart={e => { dispatch(dragStartProxy(data.name,data.image,data.titleEditable)) }}/> 
       <div className={styles.incaf}>{data.name}</div>
     </div>
   )

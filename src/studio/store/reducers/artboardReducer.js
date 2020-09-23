@@ -92,7 +92,7 @@ export default function (state = initialState, action) {
           ...state
         }
       }
-
+      
       state.sprites[findex] = {
         ...state.sprites[findex],
         ...action.attrs
@@ -100,7 +100,7 @@ export default function (state = initialState, action) {
 
       const sp = state.sprites[findex]
       
-      console.log(sp)
+      //console.log(sp)
       //if out of bound then delete
       if (sp.x < 0 || sp.y < 0 || sp.x > state.width || sp.y > state.height) {
         const remainder = state.sprites.filter(item => item.id !== action.id)
@@ -110,9 +110,6 @@ export default function (state = initialState, action) {
           select: null
         }
       }
-
-     // const select = state.select ? sp : null
-
       return {
         ...state,
         sprites: state.sprites,
