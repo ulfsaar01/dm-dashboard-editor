@@ -1,7 +1,4 @@
-import {
-  APP_LOADING,
-  APP_READY
-} from '../constants'
+import { APP_LOADING, APP_READY } from '../constants'
 import { updateArtboardBackground, generateSprites } from './artboardActions'
 
 export const initialize = () => {
@@ -16,8 +13,8 @@ export const loadFile = data => {
   //console.log(data)
 
   //const { width, height, image, sprites } = useSelector(state => state.artboard)
-  const bg = (data.contestImageFile && data.contestImageFile.url) ? data.contestImageFile.url : ""
-  const buttons = (data.buttons) ? data.buttons : []
+  const bg = data.contestImageFile && data.contestImageFile.url ? data.contestImageFile.url : ''
+  const buttons = data.buttons ? data.buttons : []
 
   //console.log(bg)
   //console.log(buttons)
@@ -28,22 +25,17 @@ export const loadFile = data => {
     for (var item of buttons) {
       //console.log(item)
 
-      const posX = Math.round((width*item.position.x)/0.9)
-      const posY = Math.round((height*item.position.y)/0.9)
+      const posX = Math.round((width * item.position.x) / 0.9)
+      const posY = Math.round((height * item.position.y) / 0.9)
 
-      const id =
-        item.title.toLowerCase() +
-        '_' +
-        posX +
-        '_' +
-        posY
+      const id = item.title.toLowerCase() + '_' + posX + '_' + posY
 
       const obj = {
         id: id,
-        title:item.title,
-        image:(item.icon || '/assets/add.png') ,
-        cat:(item.categoryId || ''),
-        subcat:(item.subcategoryId || ''),
+        title: item.title,
+        image: item.icon || '/assets/add.png',
+        cat: item.categoryId || '',
+        subcat: item.subcategoryId || '',
         x: posX,
         y: posY
       }
@@ -58,62 +50,38 @@ export const loadFile = data => {
 }
 
 export const loadFileFromParent = (buttons, image) => {
-  //console.log(data)
+  const bg = image && image.url ? image.url : image.base64 ? image.base64 : ''
 
-  /*
-  const emptyImage = {
-  __type: 'File',
-  name: '',
-  url: ''
-}
-
-const bytesObj = file => {
-  return {
-    __type: 'Bytes',
-    base64: file
-  }
-
-  */
-
-  //const { width, height, image, sprites } = useSelector(state => state.artboard)
-  //const bg = (data.contestImageFile && data.contestImageFile.url) ? data.contestImageFile.url : ""
-  const bg = (image && image.url) ? image.url : (image.base64) ? image.base64 : ''
-  //const buttons = (buttons) ? buttons : []
-
-  //console.log(bg)
-  //console.log(buttons)
   return (dispatch, getState) => {
     const { width, height } = getState().artboard
     var formatted = []
 
     for (var item of buttons) {
-      //console.log(item)
+      ///console.log(item)
 
-      const posX = Math.round((width*item.position.x)/0.9)
-      const posY = Math.round((height*item.position.y)/0.9)
+      const posX = Math.round((width * item.position.x) / 0.9)
+      const posY = Math.round((height * item.position.y) / 0.9)
 
-      const id =
-        item.title.toLowerCase() +
-        '_' +
-        posX +
-        '_' +
-        posY
+      const id = item.title.toLowerCase() + '_' + posX + '_' + posY
 
+      /*
+        cat: item.categoryId || '',
+        subcat: item.subcategoryId || '',
+      */
+     
       const obj = {
         id: id,
-        title:item.title,
-        image:(item.icon || '/assets/add.png') ,
-        cat:(item.categoryId || ''),
-        subcat:(item.subcategoryId || ''),
+        title: item.title,
+        image: item.icon || '/assets/add.png',
+        cat: [[item.categoryId || '', item.subcategoryId || '']],
         x: posX,
         y: posY
       }
       formatted.push(obj)
     }
-    //console.log(formatted)
+    console.log(formatted)
     dispatch(updateArtboardBackground(bg))
     dispatch(generateSprites(formatted))
-
     return
   }
 }

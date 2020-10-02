@@ -21,7 +21,6 @@ const Studio = () => {
       */
       try {
       const received = JSON.parse(e.data)
-      //console.log(received.buttons)
       dispatch(loadFileFromParent(JSON.parse(received.buttons),received.image))
       } catch (e) {
 
