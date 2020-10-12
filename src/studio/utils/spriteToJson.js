@@ -9,11 +9,14 @@ export const spriteToJsonBubble = (data, width, height) => {
 
     var catid = undefined
     var subcatid = undefined
-    console.log(element)
-    element.cat.forEach(e => {
+
+    if(element.cat) {
+      element.cat.forEach(e => {
       if (e[0]) catid = e[0]
       if (e[1]) subcatid = e[1]
     })
+    }
+    
 
     const obj = {
       title: element.title,
