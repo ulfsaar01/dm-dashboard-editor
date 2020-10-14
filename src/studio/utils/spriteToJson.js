@@ -17,6 +17,9 @@ export const spriteToJsonBubble = (data, width, height) => {
     })
     }
     
+    if(element.title.toLowerCase() === "mydecor") {
+      catid = "99999"
+    }
 
     const obj = {
       title: element.title,

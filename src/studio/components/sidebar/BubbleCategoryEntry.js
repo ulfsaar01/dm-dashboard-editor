@@ -44,6 +44,7 @@ const BubbleCategoryEntry = ({ index, data, onCatSelect, onSubCatSelect, onRemov
 
   useEffect(() => {
     if (!data) return
+    console.log(data)
     setSelectCategory(data[0] ? data[0] : '')
   }, [data])
 

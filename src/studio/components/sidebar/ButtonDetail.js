@@ -27,17 +27,19 @@ const AddButton = styled.button`
 const ButtonDetail = ({ data }) => {
   const dispatch = useDispatch()
   const [entries, setEntries] = useState([['', '']])
+  const [bubbleTitle, setBubbleTitle] = useState('')
 
   useEffect(() => {
     if (!data) return
-    //console.log(data.id, data.cat)
+    if (data.title) setBubbleTitle(data.title)
     if (data.cat) setEntries([...data.cat])
   }, [data])
 
   const handleCatSelect = (idx, catid) => {
     const temp = entries
-    //console.log(entries)
+    console.log(entries)
     temp[idx][0] = catid
+    temp[idx][1] = ""
     setEntries([...temp])
     //console.log(data.id)
     dispatch(
@@ -83,9 +85,13 @@ const ButtonDetail = ({ data }) => {
       <div className={`${styles.sbsec} ${data.selected && data.selected === true ? styles.selbg : ''}`}>
         <DetailInputGroup title="title" value={data.title} onChange={handleInput} />
         <DetailInputGroup title="icon" value={data.image} readOnly />
-        {entries.map((d, i) => (
-          <BubbleCategoryEntry key={i} data={d} index={i} onCatSelect={handleCatSelect} onSubCatSelect={handleSubcatSelect} onRemove={handleRemove} />
-        ))}
+        {bubbleTitle !== 'MyDecor' && (
+          <>
+            {entries.map((d, i) => (
+              <BubbleCategoryEntry key={i} data={d} index={i} onCatSelect={handleCatSelect} onSubCatSelect={handleSubcatSelect} onRemove={handleRemove} />
+            ))}
+          </>
+        )}
         <AddButton onClick={handleAdd}>
           <FontAwesomeIcon icon={faPlus} /> add category
         </AddButton>

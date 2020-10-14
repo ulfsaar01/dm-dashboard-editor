@@ -35,11 +35,11 @@ const Target = props => {
         //pointRef.current.offsetX(-3.5)
       } else {
         const freakenOffset = 0
-        node.width(40)
-        node.height(40)
-        node.offsetX(40 / 2)
-        node.offsetY((40 / 2) - freakenOffset)
-        txtRef.current.offsetY(-22 - freakenOffset)
+        node.width(32)
+        node.height(32)
+        node.offsetX(32 / 2)
+        node.offsetY((32 / 2) - freakenOffset)
+        txtRef.current.offsetY(-18 - freakenOffset)
       }
     //}
   }, [img])
