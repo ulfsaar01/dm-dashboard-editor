@@ -1,0 +1,480 @@
+[
+    {
+        "name": "accessories",
+        "Id": "10001",
+        "subCategories": [
+            {
+                "subId": "11053",
+                "name": "Art"
+            },
+            {
+                "subId": "11084",
+                "name": "Basket"
+            },
+            {
+                "subId": "bathroom-1",
+                "name": "Bath"
+            },
+            {
+                "subId": "11066",
+                "name": "Bowl"
+            },
+            {
+                "subId": "11070",
+                "name": "Candles & Holders"
+            },
+            {
+                "subId": "construction-1",
+                "name": "Construction"
+            },
+            {
+                "subId": "11073",
+                "name": "Curtain"
+            },
+            {
+                "subId": "11054",
+                "name": "Dinnerware"
+            },
+            {
+                "subId": "11055",
+                "name": "Drinkware"
+            },
+            {
+                "subId": "fashion-1",
+                "name": "Fashion"
+            },
+            {
+                "subId": "11056",
+                "name": "Flatware"
+            },
+            {
+                "subId": "11069",
+                "name": "Floor Mirror"
+            },
+            {
+                "subId": "11074",
+                "name": "Flowers & Plants"
+            },
+            {
+                "subId": "11091",
+                "name": "Others"
+            },
+            {
+                "subId": "10006",
+                "name": "Photography"
+            },
+            {
+                "subId": "11060",
+                "name": "Pillow"
+            },
+            {
+                "subId": "11064",
+                "name": "Plate"
+            },
+            {
+                "subId": "11072",
+                "name": "Rug"
+            },
+            {
+                "subId": "11065",
+                "name": "Table Runner"
+            },
+            {
+                "subId": "11061",
+                "name": "Throw"
+            },
+            {
+                "subId": "11062",
+                "name": "Tray"
+            },
+            {
+                "subId": "11071",
+                "name": "Vase"
+            },
+            {
+                "subId": "11058",
+                "name": "Wall Decorator"
+            },
+            {
+                "subId": "11068",
+                "name": "Wall Mirror"
+            }
+        ]
+    },
+    {
+        "name": "bedroom",
+        "Id": "16703",
+        "subCategories": [
+            {
+                "subId": "",
+                "name": ""
+            },
+            {
+                "subId": "11017",
+                "name": "Armoires & Wardrobes"
+            },
+            {
+                "subId": "11013",
+                "name": "Bed"
+            },
+            {
+                "subId": "11018",
+                "name": "Bedding"
+            },
+            {
+                "subId": "11016",
+                "name": "Benches"
+            },
+            {
+                "subId": "11014",
+                "name": "Dressers & Chests"
+            },
+            {
+                "subId": "11019",
+                "name": "Headboard"
+            },
+            {
+                "subId": "11015",
+                "name": "Nightstand"
+            },
+            {
+                "subId": "11086",
+                "name": "Others"
+            }
+        ]
+    },
+    {
+        "name": "dining",
+        "Id": "18243",
+        "subCategories": [
+            {
+                "subId": "11022",
+                "name": "Barstool"
+            },
+            {
+                "subId": "11025",
+                "name": "Cart"
+            },
+            {
+                "subId": "11021",
+                "name": "Chair"
+            },
+            {
+                "subId": "11087",
+                "name": "Others"
+            },
+            {
+                "subId": "11023",
+                "name": "Sideboard"
+            },
+            {
+                "subId": "11020",
+                "name": "Table"
+            }
+        ]
+    },
+    {
+        "name": "effect",
+        "Id": "11999",
+        "subCategories": [
+            {
+                "subId": "",
+                "name": ""
+            }
+        ]
+    },
+    {
+        "name": "holiday",
+        "Id": "holiday-1",
+        "subCategories": [
+            {
+                "subId": "",
+                "name": ""
+            }
+        ]
+    },
+    {
+        "name": "kids",
+        "Id": "10003",
+        "subCategories": [
+            {
+                "subId": "16703",
+                "name": "Bedroom"
+            },
+            {
+                "subId": "10001",
+                "name": "Decor"
+            },
+            {
+                "subId": "16627",
+                "name": "Nursery"
+            },
+            {
+                "subId": "11089",
+                "name": "Others"
+            },
+            {
+                "subId": "10005",
+                "name": "Playroom"
+            }
+        ]
+    },
+    {
+        "name": "lighting",
+        "Id": "10004",
+        "subCategories": [
+            {
+                "subId": "",
+                "name": ""
+            },
+            {
+                "subId": "11079",
+                "name": "Ceiling & Tracking"
+            },
+            {
+                "subId": "11083",
+                "name": "Ceiling Fan"
+            },
+            {
+                "subId": "11077",
+                "name": "Chandelier"
+            },
+            {
+                "subId": "11075",
+                "name": "Floor Lamp"
+            },
+            {
+                "subId": "11082",
+                "name": "Holiday Lighting"
+            },
+            {
+                "subId": "11093",
+                "name": "Mini Pendant"
+            },
+            {
+                "subId": "11092",
+                "name": "Others"
+            },
+            {
+                "subId": "11081",
+                "name": "Outdoor Lighting"
+            },
+            {
+                "subId": "11078",
+                "name": "Pendant"
+            },
+            {
+                "subId": "11076",
+                "name": "Table Lamp"
+            },
+            {
+                "subId": "11080",
+                "name": "Wall Light"
+            }
+        ]
+    },
+    {
+        "name": "living",
+        "Id": "17006",
+        "subCategories": [
+            {
+                "subId": "11004",
+                "name": "Accent Chair"
+            },
+            {
+                "subId": "11008",
+                "name": "Coffee Table"
+            },
+            {
+                "subId": "11012",
+                "name": "Console Table"
+            },
+            {
+                "subId": "11009",
+                "name": "End Table"
+            },
+            {
+                "subId": "11003",
+                "name": "Futons & Sleepers"
+            },
+            {
+                "subId": "11006",
+                "name": "Lounge Chair"
+            },
+            {
+                "subId": "11002",
+                "name": "Loveseat"
+            },
+            {
+                "subId": "11010",
+                "name": "Media Storage"
+            },
+            {
+                "subId": "11085",
+                "name": "Others"
+            },
+            {
+                "subId": "11005",
+                "name": "Ottoman"
+            },
+            {
+                "subId": "11007",
+                "name": "Recliner"
+            },
+            {
+                "subId": "11001",
+                "name": "Sectional Sofa"
+            },
+            {
+                "subId": "11000",
+                "name": "Sofa"
+            },
+            {
+                "subId": "11011",
+                "name": "Tv Stand"
+            }
+        ]
+    },
+    {
+        "name": "office",
+        "Id": "16566",
+        "subCategories": [
+            {
+                "subId": "11027",
+                "name": "Bookcase & Shelf"
+            },
+            {
+                "subId": "11026",
+                "name": "Desk"
+            },
+            {
+                "subId": "11028",
+                "name": "Office Chair"
+            },
+            {
+                "subId": "11088",
+                "name": "Others"
+            },
+            {
+                "subId": "11029",
+                "name": "Storage & Cabinet"
+            }
+        ]
+    },
+    {
+        "name": "outdoor",
+        "Id": "10000",
+        "subCategories": [
+            {
+                "subId": "11030",
+                "name": "Accent Chair"
+            },
+            {
+                "subId": "11034",
+                "name": "Bar Stool"
+            },
+            {
+                "subId": "11041",
+                "name": "Bar Table"
+            },
+            {
+                "subId": "11032",
+                "name": "Benches"
+            },
+            {
+                "subId": "11043",
+                "name": "Coffee Table"
+            },
+            {
+                "subId": "11042",
+                "name": "Console Table"
+            },
+            {
+                "subId": "11036",
+                "name": "Conversation Sets"
+            },
+            {
+                "subId": "11035",
+                "name": "Daybed"
+            },
+            {
+                "subId": "11033",
+                "name": "Dining Chair"
+            },
+            {
+                "subId": "11039",
+                "name": "Dining Table"
+            },
+            {
+                "subId": "11051",
+                "name": "Garden Decor"
+            },
+            {
+                "subId": "11038",
+                "name": "Garden Stool"
+            },
+            {
+                "subId": "11045",
+                "name": "Hammock"
+            },
+            {
+                "subId": "11031",
+                "name": "Lounge Chair"
+            },
+            {
+                "subId": "11090",
+                "name": "Others"
+            },
+            {
+                "subId": "11037",
+                "name": "Ottoman"
+            },
+            {
+                "subId": "11047",
+                "name": "Pillow"
+            },
+            {
+                "subId": "11052",
+                "name": "Planter"
+            },
+            {
+                "subId": "11048",
+                "name": "Rug"
+            },
+            {
+                "subId": "11040",
+                "name": "Side Table"
+            },
+            {
+                "subId": "11094",
+                "name": "Sofa"
+            },
+            {
+                "subId": "11050",
+                "name": "Statues & Sculptures"
+            },
+            {
+                "subId": "11044",
+                "name": "Swing"
+            },
+            {
+                "subId": "11046",
+                "name": "Umbrella"
+            },
+            {
+                "subId": "11049",
+                "name": "Wall Decor"
+            }
+        ]
+    },
+    {
+        "name": "pet",
+        "Id": "11998",
+        "subCategories": [
+            {
+                "subId": "",
+                "name": ""
+            }
+        ]
+    }
+]
