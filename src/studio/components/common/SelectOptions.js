@@ -8,7 +8,7 @@ export const CategoryOptions = () => {
     <>
       <option key="none" value="">none</option>
       {categories.map((item) => (
-        <option key={item.Id} value={item.Id}>
+        <option key={item.value} value={item.value}>
         {item.name}
       </option>
       ))}
@@ -22,14 +22,14 @@ export const SubcategoryOptions = ({catid}) => {
   if(!categories) return <option key="none" value="">none</option>
   if(categories === null) return <option key="none" value="">none</option>
 
-  const findex = categories.findIndex(x => x.Id === catid)
+  const findex = categories.findIndex(x => x.value === catid)
   if(findex === -1) return <option key="none" value="">none</option>
-  const sub = categories[findex].subCategories
+  const sub = categories[findex].children
   return (
     <>
       <option key="none" value="">none</option>
       {sub.map((item) => (
-        <option key={item.subId} value={item.subId}>
+        <option key={item.value} value={item.value}>
         {item.name}
       </option>
       ))}
