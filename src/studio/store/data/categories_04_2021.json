@@ -129,10 +129,6 @@
             {
                 "name": "others",
                 "value": "11087"
-            },
-            {
-                "name": "benches",
-                "value": "11059"
             }
         ]
     },
@@ -169,8 +165,20 @@
         "shortName": "Kids",
         "children": [
             {
+                "name": "bedroom",
+                "value": "16703"
+            },
+            {
+                "name": "nursery",
+                "value": "16627"
+            },
+            {
                 "name": "playroom",
                 "value": "10005"
+            },
+            {
+                "name": "outdoor",
+                "value": "10000"
             },
             {
                 "name": "decor",
@@ -179,38 +187,6 @@
             {
                 "name": "others",
                 "value": "11089"
-            },
-            {
-                "name": "beds",
-                "value": "10012"
-            },
-            {
-                "name": "cribs",
-                "value": "10013"
-            },
-            {
-                "name": "dressers",
-                "value": "10014"
-            },
-            {
-                "name": "chairs",
-                "value": "10015"
-            },
-            {
-                "name": "storage",
-                "value": "10016"
-            },
-            {
-                "name": "table",
-                "value": "10017"
-            },
-            {
-                "name": "toys",
-                "value": "10018"
-            },
-            {
-                "name": "lamps",
-                "value": "10019"
             }
         ]
     },
@@ -421,10 +397,6 @@
             {
                 "name": "construction",
                 "value": "11103"
-            },
-            {
-                "name": "table decor",
-                "value": "11104"
             }
         ]
     },
@@ -529,12 +501,6 @@
         "value": "holiday-1",
         "name": "holiday",
         "shortName": "Holiday",
-        "children": []
-    },
-    {
-        "value": "10009",
-        "name": "architecture",
-        "shortName": "Architecture",
         "children": []
     }
 ]
